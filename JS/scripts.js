@@ -1,10 +1,12 @@
 //JS menu responsivo
 const btnMobile = document.getElementById("btn-mobile");
+const nav = document.getElementById("nav");
 
 function toggleMenu(e) {
   if (e.type === "touchstart") e.preventDefault(); // previne o clique no touch
-  const nav = document.getElementById("nav");
   nav.classList.toggle("active");
+
+  
 
   //melhorar acessibilidade do menu
   const active = nav.classList.contains("active"); // se tiver active é true, senao é falso
@@ -16,9 +18,18 @@ function toggleMenu(e) {
   }
 }
 
+function fechar() {
+  if(nav.classList.contains('active') === true) {
+    
+    nav.classList.remove("active")
+  }
+}
+
 //escuta de cliques
 btnMobile.addEventListener("click", toggleMenu);
 btnMobile.addEventListener("touchstart", toggleMenu); //melhora desempenho no touch
+
+
 // fim menu responsivo
 
 //funcao typewriter

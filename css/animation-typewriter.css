@@ -1,16 +1,13 @@
 h1 {
     width: min(480px, 90%);
     text-align: center;
-    margin: 60px auto;
+    margin: auto;
+    margin-top: 130px;
+    margin-bottom: 50px;
+
     color: #fff;
   }
-  h1::after {
-  content: '|';
-  opacity: 1;
-  margin-left: 5px;
-  display: inline-block;
-  animation: blink .7s infinite;
-}
+
 
 @keyframes blink {
   0%, 100% {

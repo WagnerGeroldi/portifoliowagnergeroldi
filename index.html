@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Wagner Geroldi - Desenvolvedor FULLSTACK JavaScript</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header">
-        <a id="logo" href="#">
-            <img src="assets/logo.png" alt="Logo Wagner Geroldi">
-        </a>
-        <nav id="nav">
-          <button
-            id="btn-mobile"
-            aria-controls="menu"
-            aria-haspopup="true"
-            aria-label="Abrir menu"
-            aria-expanded="false"
-          >
-            <span id="hamburger"></span>
-          </button>
-          <ul id="menu" role="menu site">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portifólio</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-      </header>
-      <h1>Wagner Geroldi. Desenvolverdor FULLSTACK JavaScript!</h1>
+      <a id="logo" href="#">
+        <img src="assets/logo.png" alt="Logo Wagner Geroldi" />
+      </a>
+      <nav id="nav">
+        <button
+          id="btn-mobile"
+          aria-controls="menu"
+          aria-haspopup="true"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu site">
+          <li><a onclick="fechar()" href="/">Início</a></li>
+          <li><a onclick="fechar()" href="#sobre">Sobre</a></li>
+          <li><a onclick="fechar()"href="#">Portifólio</a></li>
+          <li><a onclick="fechar()" href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <section id="inicio">
+        <h1>Wagner Geroldi. Desenvolverdor FULLSTACK JavaScript!</h1>
+        
+      </section>
+      <section id="sobre">
+        Sou Wagner Lucas Geroldi, trabalho com tecnologia a 15 anos, mas desde o
+        início de 2021 coloquei os olhos na programação e decidi estudar para me
+        tornar um desenvolvedor FullStack
+      </section>
+    </div>
+
     <script src="JS/scripts.js"></script>
-</body>
+  </body>
 </html>
