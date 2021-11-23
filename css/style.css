@@ -16,6 +16,10 @@ body {
     animation: fundoAnimado 8s infinite;
 }
 
+.ajuste {
+    height: 70px;
+}
+
 @keyframes fundoAnimado{
     0% {
         background: black;
@@ -72,6 +76,35 @@ body {
 
 }
 
+#portifolio {
+    text-align: center;
+}
+
+#portifolio h3{
+    margin: 30px;
+}
+
+#portifolio img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.div-box {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 260px;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    color: black;
+}
+
 
 footer {
     height: 50px;
@@ -83,9 +116,15 @@ footer {
 }
 
 
+
+
 @media(max-width: 600px) {
     .linguagens {
         flex-direction: column;
     
+    }
+
+    .div-box {
+        flex-direction: column;
     }
 }
