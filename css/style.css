@@ -56,6 +56,22 @@ body {
     border: 5px solid #000fff;
 }
 
+.rede-social .title {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.rede-social .itens {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.rede-social .itens a:hover{
+   color: blueviolet;
+}
+
 
 #sobre {
     text-align: justify;
