@@ -2,6 +2,8 @@
 const btnMobile = document.getElementById("btn-mobile");
 const nav = document.getElementById("nav");
 
+smoothscroll.polyfill();
+
 function toggleMenu(e) {
   if (e.type === "touchstart") e.preventDefault(); // previne o clique no touch
   nav.classList.toggle("active");
