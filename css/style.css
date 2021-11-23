@@ -13,7 +13,21 @@ html {
 }
 
 body {
-    background: black;
+    animation: fundoAnimado 5s infinite linear;
+}
+
+@keyframes fundoAnimado{
+    0% {
+        background: black;
+    }
+    50% {
+        
+        background: rgb(9, 0, 58);
+    }
+    100% {
+        background: black;
+
+    }
 }
 
 .container {
