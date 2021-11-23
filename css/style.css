@@ -23,8 +23,9 @@ body {
 }
 
 #inicio {
-    height: 80vh;
+    margin-bottom: 50px;
 }
+
 
 .img-profile {
     width: 250px;
@@ -35,4 +36,32 @@ body {
     width: 100%;
     border-radius: 50px 0 50px 0;
     border: 5px solid #000fff;
+}
+
+
+#sobre {
+    text-align: justify;
+    text-indent: 1rem;
+    top: 110px;
+}
+#sobre h3 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.linguagens {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+@media(max-width: 600px) {
+    .linguagens {
+        flex-direction: column;
+    
+    }
 }
