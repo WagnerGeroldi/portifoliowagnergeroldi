@@ -1,6 +1,8 @@
 @import "menu-nav.css";
 @import "animation-typewriter.css";
 
+
+/* itens globais */
 * {
   margin: 0;
   padding: 0;
@@ -18,19 +20,32 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 40px;
+}
+
+p {
+    text-align: justify;
+    text-indent: 1rem;
+}
+
 .ajuste {
   height: 70px;
 }
 
+/* final itens globais */
+
 @keyframes fundoAnimado {
   0% {
-    background: black;
-  }
-  50% {
     background: rgb(9, 0, 58);
   }
+  50% {
+    background: rgb(48, 9, 49);
+  }
   100% {
-    background: black;
+    background: rgb(9, 0, 58);
   }
 }
 
@@ -43,6 +58,7 @@ body {
 #index {
   margin-bottom: 50px;
 }
+
 
 .img-profile {
   width: 250px;
@@ -73,16 +89,6 @@ body {
 
 .contact-item {
     text-align: center;
-}
-
-#sobre {
-  text-align: justify;
-  text-indent: 1rem;
-  top: 110px;
-}
-#sobre h3 {
-  margin: 20px 0;
-  text-align: center;
 }
 
 #sobre .button {
@@ -151,8 +157,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: darkblue;
+  background: rgb(107, 107, 107);
   color: white;
+  font-weight: 700;
 }
 
 @media (max-width: 600px) {
