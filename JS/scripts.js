@@ -18,7 +18,7 @@ function toggleMenu(e) {
   }
 }
 
-function fechar() {
+function closeMenuMobile() {
   if(nav.classList.contains('active') === true) {
     
     nav.classList.remove("active")
