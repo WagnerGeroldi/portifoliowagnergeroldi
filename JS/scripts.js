@@ -46,6 +46,15 @@ const titulo = document.querySelector('h1');
 typeWriter(titulo);
 //fim typewriter
 
+
+//slider
+var slider = new KeenSlider("#my-keen-slider", {
+  slidesPerView: 3,
+  mode: "free-snap",
+  spacing: 15,
+  loop: true,
+})
+
 const buttonleiamais = document.querySelector('#leia-mais')
 const classemostrar = document.querySelector('.hidden')
 
