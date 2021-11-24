@@ -1,107 +1,106 @@
-@import 'menu-nav.css';
-@import 'animation-typewriter.css';
+@import "menu-nav.css";
+@import "animation-typewriter.css";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    animation: fundoAnimado 8s infinite;
+  animation: fundoAnimado 8s infinite;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .ajuste {
-    height: 70px;
+  height: 70px;
 }
 
-@keyframes fundoAnimado{
-    0% {
-        background: black;
-    }
-    50% {
-        
-        background: rgb(9, 0, 58);
-    }
-    100% {
-        background: black;
-
-    }
+@keyframes fundoAnimado {
+  0% {
+    background: black;
+  }
+  50% {
+    background: rgb(9, 0, 58);
+  }
+  100% {
+    background: black;
+  }
 }
 
 .container {
-    width: min(900px, 90%);
-    margin: auto;
-    color: white;
+  width: min(900px, 90%);
+  margin: auto;
+  color: white;
 }
 
 #inicio {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
-
 .img-profile {
-    width: 250px;
-    margin: auto;
+  width: 250px;
+  margin: auto;
 }
 
 .img-profile img {
-    width: 100%;
-    border-radius: 50px 0 50px 0;
-    border: 5px solid #000fff;
+  width: 100%;
+  border-radius: 50px 0 50px 0;
+  border: 5px solid #000fff;
 }
 
 .rede-social .title {
-    text-align: center;
-    margin-top: 25px;
+  text-align: center;
+  margin-top: 25px;
 }
 
 .rede-social .itens {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.rede-social .itens a:hover{
-   color: blueviolet;
+.rede-social .itens a:hover {
+  color: blueviolet;
 }
-
 
 #sobre {
-    text-align: justify;
-    text-indent: 1rem;
-    top: 110px;
+  text-align: justify;
+  text-indent: 1rem;
+  top: 110px;
 }
 #sobre h3 {
-    margin: 20px 0;
-    text-align: center;
+  margin: 20px 0;
+  text-align: center;
 }
 
 #sobre .button {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
-#sobre .button #leia-mais, .button-esconder {
-    padding: 10px;
-    background: none;
-    border: none;
-    color: white;
-    font-weight: 900;
-    cursor: pointer;
+#sobre .button #leia-mais,
+.button-esconder {
+  padding: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .hidden .button {
-    text-align: center;
+  text-align: center;
 }
 
 [class^="number-slide"],
@@ -109,65 +108,61 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  height: 150px;
+  width: 150px;
   z-index: -1;
 }
 
-
 #portifolio {
-    text-align: center;
+  text-align: center;
 }
 
-#portifolio h3{
-    margin: 30px;
+#portifolio h3 {
+  margin: 30px;
 }
 
 #portifolio img {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
 }
 
 .div-box {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .box {
-    width: 260px;
-    height: 300px;
-    background: white;
-    border-radius: 20px;
-    color: black;
+  width: 260px;
+  height: 300px;
+  background: white;
+  border-radius: 20px;
+  color: black;
 }
-
 
 footer {
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: darkblue;
-    color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: darkblue;
+  color: white;
 }
 
+@media (max-width: 600px) {
+  .linguagens {
+    flex-direction: column;
+  }
 
+  .div-box {
+    flex-direction: column;
+  }
 
-
-@media(max-width: 600px) {
-    .linguagens {
-        flex-direction: column;
-    
-    }
-
-    .div-box {
-        flex-direction: column;
-    }
-
-    [class^="number-slide"],
-[class*=" number-slide"] {
-    flex-wrap: wrap;
-}
+  [class^="number-slide"],
+  [class*=" number-slide"] {
+    display: inline-flex;
+    width: 100%;
+  }
 }
