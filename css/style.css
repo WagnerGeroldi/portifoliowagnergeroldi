@@ -109,11 +109,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 50px;
-  color: #fff;
-  font-weight: 500;
   height: 300px;
-  max-height: 100vh;
   z-index: -1;
 }
 
@@ -169,4 +165,9 @@ footer {
     .div-box {
         flex-direction: column;
     }
+
+    [class^="number-slide"],
+[class*=" number-slide"] {
+    flex-wrap: wrap;
+}
 }
