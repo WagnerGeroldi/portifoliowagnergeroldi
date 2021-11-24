@@ -14,8 +14,6 @@ html {
 
 body {
     animation: fundoAnimado 8s infinite;
-    -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .ajuste {
@@ -108,7 +106,6 @@ body {
 
 [class^="number-slide"],
 [class*=" number-slide"] {
-  background: grey;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,17 +114,9 @@ body {
   font-weight: 500;
   height: 300px;
   max-height: 100vh;
+  z-index: -1;
 }
 
-.linguagens {
-    margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-
-}
 
 #portifolio {
     text-align: center;
