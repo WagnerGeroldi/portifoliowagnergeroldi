@@ -41,16 +41,15 @@ const titulo = document.querySelector("h1");
 typeWriter(titulo);
 //fim typewriter
 
-
+var slider = new KeenSlider("#my-keen-slider", {
+  slidesPerView: 3,
+  mode: "free-snap",
+  spacing: 15,
+  loop: true,
+});
 
 window.addEventListener("resize", function () {
-  var largura = window.innerWidth;
-  var slider = new KeenSlider("#my-keen-slider", {
-    slidesPerView: 3,
-    mode: "free-snap",
-    spacing: 15,
-    loop: true,
-  });
+  let largura = window.innerWidth;
 
   if (largura < 750)
     slider = new KeenSlider("#my-keen-slider", {
