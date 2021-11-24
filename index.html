@@ -31,10 +31,15 @@
           <span id="hamburger"></span>
         </button>
         <ul id="menu" role="menu site">
-          <li><a onclick="fechar()" href="#">Início</a></li>
-          <li><a onclick="fechar()" href="#sobre">Sobre</a></li>
-          <li><a onclick="fechar()" href="#portifolio">Portifólio</a></li>
-          <li><a onclick="fechar()" href="#contato">Contato</a></li>
+          <li><a onclick="closeMenuMobile()" href="#">Início</a></li>
+          <li><a onclick="closeMenuMobile()" href="#sobre">Sobre</a></li>
+          <li>
+            <a onclick="closeMenuMobile()" href="#tecnologias">Tecnologias</a>
+          </li>
+          <li>
+            <a onclick="closeMenuMobile()" href="#portifolio">Portifólio</a>
+          </li>
+          <li><a onclick="closeMenuMobile()" href="#contato">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -50,27 +55,33 @@
             <div>
               <a
                 href="https://www.linkedin.com/in/wagner-lucas-geroldi-0a1356222/"
+                target="_blank"
               >
                 <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
               </a>
             </div>
             <div>
-              <a href="https://github.com/WagnerGeroldi">
+              <a href="https://github.com/WagnerGeroldi" target="_blank">
                 <i class="fa fa-github fa-2x" aria-hidden="true"></i>
               </a>
             </div>
             <div>
-              <a href="https://api.whatsapp.com/send?phone=5554996366433">
+              <a
+                href="https://api.whatsapp.com/send?phone=5554996366433"
+                target="_blank"
+              >
                 <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
               </a>
             </div>
             <div>
-              <a href="mailto:wagnergeroldi@gmail.com?subject=Contratar Serviço">
+              <a
+                href="mailto:wagnergeroldi@gmail.com?subject=Contratar Serviço"
+              >
                 <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
               </a>
             </div>
             <div>
-              <a href="https://www.facebook.com/lucaswagui">
+              <a href="https://www.facebook.com/lucaswagui" target="_blank">
                 <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
               </a>
             </div>
@@ -100,6 +111,30 @@
         Após em torno de 6 meses estudando comecei a criar coragem de produzir
         algumas ideias, simples mas sempre com objetivo de criar um código
         bacana. <br />
+        <div class="button">
+          <button id="leia-mais">Leia Mais..</button>
+        </div>
+        <div class="hidden">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+          id consectetur laborum, debitis beatae veniam consequuntur quasi enim
+          ullam nihil sed modi doloremque laudantium atque, voluptatem velit
+          fugiat, et repudiandae! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Necessitatibus soluta et eum asperiores minima
+          numquam eaque culpa sequi obcaecati vero ad placeat, dicta quisquam
+          porro omnis facilis quibusdam enim commodi? Lorem ipsum dolor sit,
+          amet consectetur adipisicing elit. Inventore asperiores officiis
+          nostrum quibusdam, omnis aspernatur magnam culpa minus soluta vero
+          voluptates aut corporis eius, repudiandae praesentium? Atque
+          repellendus vero et.
+          <br />
+          <div class="button">
+            <button class="button-esconder">...Esconder</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="tecnologias">
+        <div class="ajuste"></div>
         <h3>Tecnologias utilizadas</h3>
         <p>
           A quantidade de tecnologias é variada, possuo habilidades de
@@ -126,6 +161,7 @@
           </div>
         </div>
       </section>
+
       <section id="portifolio">
         <div class="ajuste"></div>
         <h3>Portifólio</h3>

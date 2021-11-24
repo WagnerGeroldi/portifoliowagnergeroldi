@@ -83,6 +83,27 @@ body {
     text-align: center;
 }
 
+#sobre .button {
+    text-align: center;
+    margin-top: 20px;
+}
+#sobre .button #leia-mais, .button-esconder {
+    padding: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden .button {
+    text-align: center;
+}
+
 .linguagens {
     margin-top: 30px;
     display: flex;

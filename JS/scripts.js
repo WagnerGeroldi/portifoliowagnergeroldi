@@ -44,3 +44,25 @@ function typeWriter(elemento) {
 
 const titulo = document.querySelector('h1');
 typeWriter(titulo);
+//fim typewriter
+
+const buttonleiamais = document.querySelector('#leia-mais')
+const classemostrar = document.querySelector('.hidden')
+
+
+
+function mostraritem() {
+  classemostrar.classList.remove('hidden')
+  buttonleiamais.classList.add('hidden')
+}
+buttonleiamais.addEventListener('click', mostraritem)
+
+
+const buttonesconder = document.querySelector('.button-esconder')
+
+
+function escondeitem() {
+  classemostrar.classList.add('hidden')
+  buttonleiamais.classList.remove('hidden')
+}
+buttonesconder.addEventListener('click', escondeitem)
