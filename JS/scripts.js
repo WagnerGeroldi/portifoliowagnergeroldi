@@ -41,6 +41,7 @@ const titulo = document.querySelector("h1");
 typeWriter(titulo);
 //fim typewriter
 
+// ajustes funcionamento keen slider
 var slider = new KeenSlider("#my-keen-slider", {
   slidesPerView: 3,
   mode: "free-snap",
@@ -60,19 +61,21 @@ window.addEventListener("resize", function () {
     });
 });
 
-const buttonleiamais = document.querySelector("#leia-mais");
-const classemostrar = document.querySelector(".hidden");
+//fim keen slider
 
-function mostraritem() {
-  classemostrar.classList.remove("hidden");
-  buttonleiamais.classList.add("hidden");
+const btnReadMore = document.querySelector("#read-more");
+const showText = document.querySelector(".hidden");
+
+function showTextAbout() {
+  showText.classList.remove("hidden");
+  btnReadMore.classList.add("hidden");
 }
-buttonleiamais.addEventListener("click", mostraritem);
+btnReadMore.addEventListener("click", showTextAbout);
 
-const buttonesconder = document.querySelector(".button-esconder");
+const btnHiddenText = document.querySelector(".button-hidden");
 
-function escondeitem() {
-  classemostrar.classList.add("hidden");
-  buttonleiamais.classList.remove("hidden");
+function hiddenTextAbout() {
+  showText.classList.add("hidden");
+  btnReadMore.classList.remove("hidden");
 }
-buttonesconder.addEventListener("click", escondeitem);
+btnHiddenText.addEventListener("click", hiddenTextAbout);

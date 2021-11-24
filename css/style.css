@@ -40,7 +40,7 @@ body {
   color: white;
 }
 
-#inicio {
+#index {
   margin-bottom: 50px;
 }
 
@@ -71,6 +71,10 @@ body {
   color: blueviolet;
 }
 
+.contact-item {
+    text-align: center;
+}
+
 #sobre {
   text-align: justify;
   text-indent: 1rem;
@@ -85,8 +89,8 @@ body {
   text-align: center;
   margin-top: 20px;
 }
-#sobre .button #leia-mais,
-.button-esconder {
+#sobre .button #read-more,
+.button-hidden {
   padding: 10px;
   background: none;
   border: none;
