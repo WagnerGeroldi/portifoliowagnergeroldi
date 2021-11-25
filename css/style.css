@@ -110,6 +110,20 @@ p {
   text-align: center;
 }
 
+#rotate {
+  animation: rotate 3s infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+
 [class^="number-slide"],
 [class*=" number-slide"] {
   display: flex;
