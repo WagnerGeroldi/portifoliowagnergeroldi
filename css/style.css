@@ -1,7 +1,6 @@
 @import "menu-nav.css";
 @import "animation-typewriter.css";
 
-
 /* itens globais */
 * {
   margin: 0;
@@ -21,14 +20,14 @@ body {
 }
 
 h3 {
-    font-size: 2rem;
-    text-align: center;
-    margin: 40px;
+  font-size: 2rem;
+  text-align: center;
+  margin: 40px;
 }
 
 p {
-    text-align: justify;
-    text-indent: 1rem;
+  text-align: justify;
+  text-indent: 1rem;
 }
 
 .ajuste {
@@ -59,7 +58,6 @@ p {
   margin-bottom: 50px;
 }
 
-
 .img-profile {
   width: 250px;
   margin: auto;
@@ -79,7 +77,6 @@ p {
 .rede-social .itens {
   margin-top: 30px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -88,7 +85,7 @@ p {
 }
 
 .contact-item {
-    text-align: center;
+  text-align: center;
 }
 
 #sobre .button {
@@ -176,13 +173,14 @@ footer {
 }
 
 @media (max-width: 600px) {
+  h3 {
+    font-size: 1.2rem;
+  }
 
-    h3 {
-        font-size: 1.2rem;
-    }
-
-  .linguagens {
-    flex-direction: column;
+  .rede-social .itens {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
   }
 
   .div-box {
