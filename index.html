@@ -1,121 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/keen-slider@5.5.0/keen-slider.min.css"
-    />
-    <title>Wagner Geroldi - Desenvolvedor FULLSTACK JavaScript</title>
-  </head>
-  <body>
-    <header id="header">
-      <a id="logo" href="#">
-        <img src="assets/logo.png" alt="Logo Wagner Geroldi" />
-      </a>
-      <nav id="nav">
-        <button
-          id="btn-mobile"
-          aria-controls="menu"
-          aria-haspopup="true"
-          aria-label="Abrir menu"
-          aria-expanded="false"
-        >
-          <span id="hamburger"></span>
-        </button>
-        <ul id="menu" role="menu site">
-          <li><a onclick="closeMenuMobile()" href="#">Início</a></li>
-          <li><a onclick="closeMenuMobile()" href="#sobre">Sobre</a></li>
-          <li>
-            <a onclick="closeMenuMobile()" href="#tecnologias">Tecnologias</a>
-          </li>
-          <li>
-            <a onclick="closeMenuMobile()" href="#portifolio">Portifólio</a>
-          </li>
-          <li><a onclick="closeMenuMobile()" href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container">
-      <section id="index">
-        <h1>Wagner Geroldi. Desenvolverdor FULLSTACK JavaScript!</h1>
-        <div class="img-profile">
-          <img src="assets/Wagner.jpg" alt="Wagner Perfil" />
-        </div>
-        <div class="rede-social">
-          <h3>&gt; Onde me encontrar &lt;</h3>
-          <div class="itens">
-            <div class="contact-item">
-              <a
-                href="https://www.linkedin.com/in/wagner-lucas-geroldi-0a1356222/"
-                target="_blank"
-              >
-                <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-              </a>
-              <br />
-              <small>Linkedin</small>
-            </div>
-            <div class="contact-item">
-              <a
-                href="https://wagnergeroldi.github.io/curriculo/"
-                target="_blank"
-              >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@5.5.0/keen-slider.min.css" />
+  <title>Wagner Geroldi - Desenvolvedor FULLSTACK JavaScript</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header id="header">
+    <a id="logo" href="#">
+      <img src="assets/logo.png" alt="Logo Wagner Geroldi" />
+    </a>
+    <nav id="nav">
+      <button id="btn-mobile" aria-controls="menu" aria-haspopup="true" aria-label="Abrir menu" aria-expanded="false">
+        <span id="hamburger"></span>
+      </button>
+      <ul id="menu" role="menu site">
+        <li><a onclick="closeMenuMobile()" href="#">Início</a></li>
+        <li><a onclick="closeMenuMobile()" href="#sobre">Sobre</a></li>
+        <li>
+          <a onclick="closeMenuMobile()" href="#tecnologias">Tecnologias</a>
+        </li>
+        <li>
+          <a onclick="closeMenuMobile()" href="#portifolio">Portifólio</a>
+        </li>
+        <li><a onclick="closeMenuMobile()" href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <section id="index">
+      <h1>Wagner Geroldi. Desenvolverdor FULLSTACK JavaScript!</h1>
+      <div class="img-profile">
+        <img src="assets/Wagner.jpg" alt="Wagner Perfil" />
+      </div>
+      <div class="rede-social">
+        <h3>&gt; Onde me encontrar &lt;</h3>
+        <div class="itens">
+          <div class="contact-item">
+            <a href="https://www.linkedin.com/in/wagner-lucas-geroldi-0a1356222/" target="_blank">
+              <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+            </a>
+            <br />
+            <small>Linkedin</small>
+          </div>
+          <div class="contact-item">
+            <a href="https://wagnergeroldi.github.io/curriculo/" target="_blank">
               <i class="fa fa-user fa-2x" aria-hidden="true"></i>
-              </a>
-              <br />
-              <small>Currículo</small>
-            </div>
-            <div class="contact-item">
-              <a href="https://github.com/WagnerGeroldi" target="_blank">
-                <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-              </a>
-              <br />
-              <small>GitHub</small>
-            </div>
-            <div class="contact-item">
-              <a
-                href="https://api.whatsapp.com/send?phone=5554996366433"
-                target="_blank"
-              >
-                <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
-              </a>
-              <br />
-              <small>WhatsApp</small>
-            </div>
-            <div class="contact-item">
-              <a
-                href="mailto:wagnergeroldi@gmail.com?subject=Contratar Serviço"
-              >
-                <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
-              </a>
-              <br />
-              <small>E-mail</small>
-            </div>
-            <div class="contact-item">
-              <a href="https://www.facebook.com/lucaswagui" target="_blank">
-                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
-              </a>
-              <br />
-              <small>Facebook</small>
-            </div>
+            </a>
+            <br />
+            <small>Currículo</small>
+          </div>
+          <div class="contact-item">
+            <a href="https://github.com/WagnerGeroldi" target="_blank">
+              <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            </a>
+            <br />
+            <small>GitHub</small>
+          </div>
+          <div class="contact-item">
+            <a href="https://api.whatsapp.com/send?phone=5554996366433" target="_blank">
+              <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+            </a>
+            <br />
+            <small>WhatsApp</small>
+          </div>
+          <div class="contact-item">
+            <a href="mailto:wagnergeroldi@gmail.com?subject=Contratar Serviço">
+              <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+            </a>
+            <br />
+            <small>E-mail</small>
+          </div>
+          <div class="contact-item">
+            <a href="https://www.facebook.com/lucaswagui" target="_blank">
+              <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+            </a>
+            <br />
+            <small>Facebook</small>
           </div>
         </div>
-      </section>
-      <section id="sobre">
-        <div class="ajuste"></div>
-        <h3>&gt; Sobre mim &lt;</h3>
-       <p> Sou Wagner Lucas Geroldi, trabalho com tecnologia desde os 17 anos de
+      </div>
+    </section>
+    <section id="sobre">
+      <div class="ajuste"></div>
+      <h3>&gt; Sobre mim &lt;</h3>
+      <p> Sou Wagner Lucas Geroldi, trabalho com tecnologia desde os 17 anos de
         idade, como professor de informática, desde cursos básicos do Pacote
         Office, até cursos de Computação Gráfica, Edição de Vídeos e até Desenho
         Técnico.
@@ -137,10 +115,10 @@
         algumas ideias, simples mas sempre com objetivo de criar um código
         bacana... <br />
       </p>
-        <div class="button">
-          <button id="read-more">Leia Mais...</button>
-        </div>
-        <div class="hidden">
+      <div class="button">
+        <button id="read-more">Leia Mais...</button>
+      </div>
+      <div class="hidden">
         <p>
           Com toda a bagagem que obtive durante os anos trabalhando como
           professor, adquiri algumas habilidades que considero essencial,
@@ -154,218 +132,222 @@
           Procuro
 
           <br />
-          <div class="button">
-            <button class="button-hidden">...Esconder</button>
-          </div>
+        <div class="button">
+          <button class="button-hidden">...Esconder</button>
         </div>
+      </div>
       </p>
-      </section>
+    </section>
 
-      <section id="tecnologias">
-        <div class="ajuste"></div>
-        <h3>&gt; Tecnologias utilizadas &lt;</h3>
-        <p>
-          A quantidade de tecnologias que conheço é variada, possuo habilidades de
-          desenvolver um aplicativo Desktop em C#, criar um Back-End em JAVA,
-          mas meu foco principal no momento é a trilha do JavaScript, trabalhando com NodeJS, Express,
-          EJS template Engine entre outros.
-          <br>
-          <br>
-          <h4>Skills</h4>
-          <br>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>SASS</li>
-            <li>BootStrap</li>
-            <li>JavaScript ES6</li>
-            <li>NodeJS</li>
-            <li>Express</li>
-            <li>MongoDB</li>
-            <li>JAVA</li>
-            <li>C#</li>
-            <li>GIT/Github</li>
-          </ul>
-          <br>
-          Estou buscando especialização em React e em breve VueJS e NextJS.
+    <section id="tecnologias">
+      <div class="ajuste"></div>
+      <h3>&gt; Tecnologias utilizadas &lt;</h3>
+      <p>
+        A quantidade de tecnologias que conheço é variada, possuo habilidades de
+        desenvolver um aplicativo Desktop em C#, criar um Back-End em JAVA,
+        mas meu foco principal no momento é a trilha do JavaScript, trabalhando com NodeJS, Express,
+        EJS template Engine entre outros.
+        <br>
+        <br>
+      <h4>Skills</h4>
+      <br>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>SASS</li>
+        <li>BootStrap</li>
+        <li>JavaScript ES6</li>
+        <li>NodeJS</li>
+        <li>Express</li>
+        <li>MongoDB</li>
+        <li>JAVA</li>
+        <li>C#</li>
+        <li>GIT/Github</li>
+      </ul>
+      <br>
+      Estou buscando especialização em React e em breve VueJS e NextJS.
+      <br />
+      </p>
+      <div class="ajuste"></div>
+      <div id="my-keen-slider" class="keen-slider">
+        <div class="keen-slider__slide number-slide1">
+          <img src="assets/linguagens/csharp.png" alt="" width="150px" />
+        </div>
+        <div class="keen-slider__slide number-slide2">
+          <img src="assets/linguagens/css.png" alt="" width="150px" />
+        </div>
+        <div class="keen-slider__slide number-slide3">
+          <img src="assets/linguagens/html.png" alt="" width="150px" />
+        </div>
+        <div class="keen-slider__slide number-slide4">
+          <img src="assets/linguagens/java.png" alt="" width="150px" />
+        </div>
+        <div class="keen-slider__slide number-slide5">
+          <img src="assets/linguagens/js.png" alt="" width="150px" />
+        </div>
+        <div class="keen-slider__slide number-slide6">
+          <img src="assets/linguagens/mongo.png" alt="" width="150px" />
+        </div>
+        <div class="keen-slider__slide number-slide7">
+          <img src="assets/linguagens/node.png" alt="" width="150px" />
+        </div>
+      </div>
+    </section>
+
+    <section id="portifolio">
+      <div class="ajuste"></div>
+      <h3>Portifólio</h3>
+      <div class="div-box">
+        <div class="box">
+          <img src="assets/img_portifolio/cadastroCSharp.png" alt="Avaliacao" />
           <br />
-        </p>
-        <div class="ajuste"></div>
-        <div id="my-keen-slider" class="keen-slider">
-          <div class="keen-slider__slide number-slide1">
-            <img src="assets/linguagens/csharp.png" alt="" width="150px" />
-          </div>
-          <div class="keen-slider__slide number-slide2">
-            <img src="assets/linguagens/css.png" alt="" width="150px" />
-          </div>
-          <div class="keen-slider__slide number-slide3">
-            <img src="assets/linguagens/html.png" alt="" width="150px" />
-          </div>
-          <div class="keen-slider__slide number-slide4">
-            <img src="assets/linguagens/java.png" alt="" width="150px" />
-          </div>
-          <div class="keen-slider__slide number-slide5">
-            <img src="assets/linguagens/js.png" alt="" width="150px" />
-          </div>
-          <div class="keen-slider__slide number-slide6">
-            <img src="assets/linguagens/mongo.png" alt="" width="150px" />
-          </div>
-          <div class="keen-slider__slide number-slide7">
-            <img src="assets/linguagens/node.png" alt="" width="150px" />
-          </div>
+          <span>Cadastro e Relatório C#</span>
+          <br>
+          <br>
+          <small>Aplicação DESKTOP</small>
+          <br>
+          <br>
+          <a href="https://github.com/WagnerGeroldi/ProgramaCadastrarPessoas" target="_blank">Repositório Github</a>
         </div>
-      </section>
-
-      <section id="portifolio">
-        <div class="ajuste"></div>
-        <h3>Portifólio</h3>
-        <div class="div-box">
-          <div class="box">
-            <img src="assets/img_portifolio/cadastroCSharp.png" alt="Avaliacao" />
-            <br />
-            <span>Cadastro e Relatório C#</span>
-            <br>
-            <br>
-            <small>Aplicação DESKTOP</small>
-            <br>
-            <br>
-            <a href="https://github.com/WagnerGeroldi/ProgramaCadastrarPessoas" target="_blank">Repositório Github</a>
-          </div>
-          <div class="box">
-            <img src="assets/img_portifolio/letmeask.png" alt="LetMeAsk" />
-            <br />
-            <span>LetMeAst RocketSeat</span>
-            <br>
-            <br>
-            <a href="https://letmeask-b76dd.web.app/" target="_blank">Acessar Site (sem responsividade)</a>
-            <br>
-            <br>
-            <a href="https://github.com/WagnerGeroldi/LETMEASK-ROCKETSEAT" target="_blank">Repositório Github</a>
-          </div>
-          <div class="box">
-            <img src="assets/linguagens/java.png" alt="Cadastro de Carros" />
-            <br />
-            <span>Cadastro de Cliente em JAVA</span>
-            <br>
-            <br>
-            <small>Aplicação DESKTOP</small>
-            <br>
-            <br>
-            <a href="https://github.com/WagnerGeroldi/CadastroClienteJava" target="_blank">Repositório Github</a>
-          </div>
-          <div class="box">
-            <img src="assets/img_portifolio/mastercode.png" alt="MasterCode" />
-            <br />
-            <span>MasterCode (em construção)</span>
-            <br>
-            <br>
-            <a href="https://mastercodedicas.web.app/" target="_blank">Acessar Site</a>
-            <br>
-            <br>
-            <a href="https://github.com/WagnerGeroldi/mastercode" target="_blank">Repositório Github</a>
-          </div>
-          <div class="box">
-            <img src="assets/img_portifolio/api.png" alt="Consumir API" />
-            <br />
-            <span>API RESTFUL</span>
-            <br>
-            <br>
-            <small>indisponível no momento</small>
-            <br>
-            <br>
-            <a href="https://github.com/WagnerGeroldi/API-REST" target="_blank">Repositório Github</a>
-          </div>
-
-          <div class="box">
-            <img src="assets/img_portifolio/cadastroDeCarros.png" alt="Cadastro de Carros" />
-            <br />
-            <span>CRUD / mongoDB / Express</span>
-            <br>
-            <br>
-            <small>indisponível no momento</small>
-            <br>
-            <br>
-            <a href="https://github.com/WagnerGeroldi/cadastrarCarros" target="_blank">Repositório Github</a>
-          </div>
-          <div class="box">
-            <img src="assets/img_portifolio/sisLogin.png" alt="" />
-            <br />
-            <span>Sistema de Login</span>
-            <br>
-            <br>
-            <a href="https://wagnergeroldi.github.io/sistemadelogin/" target="_blank">Acessar Site</a>
-            <br>
-            <br>
-            <a href="https://github.com/WagnerGeroldi/sistemadelogin" target="_blank">Repositório Github</a>
-          </div>
-          <div class="box">
-            <img src="assets/img_portifolio/calculadoraReact.png" alt="Calculadora React" />
-            <br />
-            <span>Calculadora em React</span>
-            <br>
-            <br>
-            <a href="https://calculadora-wagner.web.app/" target="_blank">Acessar Site</a>
-            <br>
-            <br>
-            <a href="https://github.com/WagnerGeroldi/CALCULADORA-REACT" target="_blank">Repositório Github</a>
-          </div>
-          <div class="box">
-            <img src="assets/img_portifolio/site.png" alt=" Site BootStrapp" />
-            <br />
-            <span>Site BootStrap</span>
-            <br>
-            <br>
-            <a href="https://wagnergeroldi.github.io/geroldi-dev/" target="_blank">Acessar Site</a>
-            <br>
-            <br>
-            <a href="https://github.com/WagnerGeroldi/geroldi-dev" target="_blank">Repositório Github</a>
-          </div>
-          <div class="box">
-            <img src="assets/img_portifolio/geroldi_dev.png" alt="Geroldi_DEV" />
-            <br />
-            <span>Geroldi'S Dev - Finanças</span>
-            <br>
-            <br>
-            <a href="https://wagnergeroldi.github.io/financas-dev/" target="_blank">Acessar Site</a>
-            <br>
-            <br>
-            <a href="https://github.com/WagnerGeroldi/financas-dev" target="_blank">Repositório Github</a>
-          </div>
-          <div class="box">
-            <img src="assets/img_portifolio/masterWay.png" alt="Master Way" />
-            <br />
-            <span>MasterWay - Cursos</span>
-            <br>
-            <br>
-            <a href="https://wagnergeroldi.github.io/Site-Responsivo-MASTERWAY/" target="_blank">Acessar Site</a>
-            <br>
-            <br>
-            <a href="https://github.com/WagnerGeroldi/Site-Responsivo-MASTERWAY" target="_blank">Repositório Github</a>
-          </div>
-          <div class="box">
-            <img src="assets/img_portifolio/calc_imc.png" alt="Calculadora de IMC" />
-            <br />
-            <span>Calculadora de IMC</span>
-            <br>
-            <br>
-            <a href="https://wagnergeroldi.github.io/calculadoraimc/" target="_blank">Acessar Site</a>
-            <br>
-            <br>
-            <a href="https://github.com/WagnerGeroldi/calculadoraimc" target="_blank">Repositório Github</a>
-          </div>
+        <div class="box">
+          <img src="assets/img_portifolio/letmeask.png" alt="LetMeAsk" />
+          <br />
+          <span>LetMeAst RocketSeat</span>
+          <br>
+          <br>
+          <a href="https://letmeask-b76dd.web.app/" target="_blank">Acessar Site (sem responsividade)</a>
+          <br>
+          <br>
+          <a href="https://github.com/WagnerGeroldi/LETMEASK-ROCKETSEAT" target="_blank">Repositório Github</a>
         </div>
-      </section>
-      <section id="contato">
-        <div class="ajuste"></div>
-        <h3>Contato</h3>
+        <div class="box">
+          <img src="assets/linguagens/java.png" alt="Cadastro de Carros" />
+          <br />
+          <span>Cadastro de Cliente em JAVA</span>
+          <br>
+          <br>
+          <small>Aplicação DESKTOP</small>
+          <br>
+          <br>
+          <a href="https://github.com/WagnerGeroldi/CadastroClienteJava" target="_blank">Repositório Github</a>
+        </div>
+        <div class="box">
+          <img src="assets/img_portifolio/mastercode.png" alt="MasterCode" />
+          <br />
+          <span>MasterCode (em construção)</span>
+          <br>
+          <br>
+          <a href="https://mastercodedicas.web.app/" target="_blank">Acessar Site</a>
+          <br>
+          <br>
+          <a href="https://github.com/WagnerGeroldi/mastercode" target="_blank">Repositório Github</a>
+        </div>
+        <div class="box">
+          <img src="assets/img_portifolio/api.png" alt="Consumir API" />
+          <br />
+          <span>API RESTFUL</span>
+          <br>
+          <br>
+          <small>indisponível no momento</small>
+          <br>
+          <br>
+          <a href="https://github.com/WagnerGeroldi/API-REST" target="_blank">Repositório Github</a>
+        </div>
 
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      </section>
-    </div>
-    <footer>Desenvolvido por Wagner L. Geroldi</footer>
+        <div class="box">
+          <img src="assets/img_portifolio/cadastroDeCarros.png" alt="Cadastro de Carros" />
+          <br />
+          <span>CRUD / mongoDB / Express</span>
+          <br>
+          <br>
+          <small>indisponível no momento</small>
+          <br>
+          <br>
+          <a href="https://github.com/WagnerGeroldi/cadastrarCarros" target="_blank">Repositório Github</a>
+        </div>
+        <div class="box">
+          <img src="assets/img_portifolio/sisLogin.png" alt="" />
+          <br />
+          <span>Sistema de Login</span>
+          <br>
+          <br>
+          <a href="https://wagnergeroldi.github.io/sistemadelogin/" target="_blank">Acessar Site</a>
+          <br>
+          <br>
+          <a href="https://github.com/WagnerGeroldi/sistemadelogin" target="_blank">Repositório Github</a>
+        </div>
+        <div class="box">
+          <img src="assets/img_portifolio/calculadoraReact.png" alt="Calculadora React" />
+          <br />
+          <span>Calculadora em React</span>
+          <br>
+          <br>
+          <a href="https://calculadora-wagner.web.app/" target="_blank">Acessar Site</a>
+          <br>
+          <br>
+          <a href="https://github.com/WagnerGeroldi/CALCULADORA-REACT" target="_blank">Repositório Github</a>
+        </div>
+        <div class="box">
+          <img src="assets/img_portifolio/site.png" alt=" Site BootStrapp" />
+          <br />
+          <span>Site BootStrap</span>
+          <br>
+          <br>
+          <a href="https://wagnergeroldi.github.io/geroldi-dev/" target="_blank">Acessar Site</a>
+          <br>
+          <br>
+          <a href="https://github.com/WagnerGeroldi/geroldi-dev" target="_blank">Repositório Github</a>
+        </div>
+        <div class="box">
+          <img src="assets/img_portifolio/geroldi_dev.png" alt="Geroldi_DEV" />
+          <br />
+          <span>Geroldi'S Dev - Finanças</span>
+          <br>
+          <br>
+          <a href="https://wagnergeroldi.github.io/financas-dev/" target="_blank">Acessar Site</a>
+          <br>
+          <br>
+          <a href="https://github.com/WagnerGeroldi/financas-dev" target="_blank">Repositório Github</a>
+        </div>
+        <div class="box">
+          <img src="assets/img_portifolio/masterWay.png" alt="Master Way" />
+          <br />
+          <span>MasterWay - Cursos</span>
+          <br>
+          <br>
+          <a href="https://wagnergeroldi.github.io/Site-Responsivo-MASTERWAY/" target="_blank">Acessar Site</a>
+          <br>
+          <br>
+          <a href="https://github.com/WagnerGeroldi/Site-Responsivo-MASTERWAY" target="_blank">Repositório Github</a>
+        </div>
+        <div class="box">
+          <img src="assets/img_portifolio/calc_imc.png" alt="Calculadora de IMC" />
+          <br />
+          <span>Calculadora de IMC</span>
+          <br>
+          <br>
+          <a href="https://wagnergeroldi.github.io/calculadoraimc/" target="_blank">Acessar Site</a>
+          <br>
+          <br>
+          <a href="https://github.com/WagnerGeroldi/calculadoraimc" target="_blank">Repositório Github</a>
+        </div>
+      </div>
+    </section>
+    <section id="contato">
+      <div class="ajuste"></div>
+      <h3>Contato</h3>
 
-    <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.5.0/keen-slider.min.js"></script>
-    <script src="JS/scripts.js"></script>
-  </body>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </section>
+  </div>
+  <a href="index.html" class="voltar-ao-topo botao-subir">
+    <i class="fa fa-chevron-circle-up fa-3x" aria-hidden="true"></i>
+  </a>
+  <footer>Desenvolvido por Wagner L. Geroldi</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/keen-slider@5.5.0/keen-slider.min.js"></script>
+  <script src="JS/scripts.js"></script>
+</body>
+
 </html>

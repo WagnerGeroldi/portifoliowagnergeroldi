@@ -176,6 +176,19 @@ footer {
   font-weight: 700;
 }
 
+.botao-subir {
+  position: fixed;
+  bottom: 0.1em;
+  right: 0.1em;
+  text-decoration: none;
+  padding: 0.7em 0.2em;
+}
+
+.botao-subir:hover {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.5s;
+}
+
 @media (max-width: 600px) {
   h3 {
     font-size: 1.2rem;
