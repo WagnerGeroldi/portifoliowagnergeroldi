@@ -112,6 +112,7 @@ p {
 
 #rotate {
   animation: rotate 3s infinite;
+  z-index: -1;
 }
 
 @keyframes rotate {
