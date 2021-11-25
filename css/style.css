@@ -144,12 +144,25 @@ p {
   align-items: center;
 }
 
+.div-box a {
+  color: #000fff;
+}
+
 .box {
   width: 260px;
   height: 300px;
   background: white;
   border-radius: 20px;
   color: black;
+}
+
+.box img {
+  height: 180px;
+}
+
+.indisponivel {
+  text-decoration: line-through;
+  cursor: help;
 }
 
 footer {
@@ -163,6 +176,11 @@ footer {
 }
 
 @media (max-width: 600px) {
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
   .linguagens {
     flex-direction: column;
   }
