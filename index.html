@@ -93,33 +93,33 @@
     <section id="sobre">
       <div class="ajuste"></div>
       <h3>&gt; Sobre mim &lt;</h3>
-      <p> Sou Wagner Lucas Geroldi, trabalho com tecnologia desde os 17 anos de
-        idade, como professor de informática, desde cursos básicos do Pacote
-        Office, até cursos de Computação Gráfica, Edição de Vídeos e até Desenho
-        Técnico.
+      <p> Sou Wagner Lucas Geroldi, 31 anos, estudante no curso de Graduação em Análise e
+        Desenvolvimento de Sistemas na Universidade FAEL, sou Professor de Informática e aspirante a Desenvolvedor
+        FULLSTACK JAVASCRIPT, trabalho com tecnologia desde os 17 anos de
+        idade e a 1 ano decidi mudar minha carreira para DEV...
         <br />
-        No início de 2021 coloquei os olhos na área da programação e foi "amor a
-        primeira vista", então decidi estudar para me tornar um desenvolvedor
-        FullStack e trocar de ramo. <br />
-        Comecei experimentando um pouco de tudo, fui de HTML ao JAVA para saber
-        com qual iria me identificar mais. <br />
-        Percebi na verdade que gostei de tudo, seja Front-End ou Back-End.
-        Gostava tanto de criar uns layouts de sites e aplicações Web com HTML,
-        CSS e JS, como criar pequenos exercicios de lógica em JAVA. Então me
-        matriculei na faculdade de Análise e Desenvolvimento de Sistemas, a qual
-        sigo em curso e tive contato com mais linguagens, como o C# que gostei
-        muito também. <br />
-        Os primeiros meses foram de muito aprendizado e buscando compreender
-        como a programação funcionava. <br />
-        Após em torno de 6 meses estudando comecei a criar coragem de produzir
-        algumas ideias, simples mas sempre com objetivo de criar um código
-        bacana... <br />
       </p>
       <div class="button">
         <button id="read-more">Leia Mais...</button>
       </div>
       <div class="hidden">
         <p>
+          No início de 2021 coloquei os olhos na área da programação e foi "amor a
+          primeira vista", então decidi estudar para me tornar um desenvolvedor
+          FullStack e trocar de ramo. <br />
+          Comecei experimentando um pouco de tudo, fui de HTML ao JAVA para saber
+          com qual iria me identificar mais. <br />
+          Percebi na verdade que gostei de tudo, seja Front-End ou Back-End.
+          Gostava tanto de criar uns layouts de sites e aplicações Web com HTML,
+          CSS e JS, como criar pequenos exercicios de lógica em JAVA. Então me
+          matriculei na faculdade de Análise e Desenvolvimento de Sistemas, a qual
+          sigo em curso e tive contato com mais linguagens, como o C# que gostei
+          muito também. <br />
+          Os primeiros meses foram de muito aprendizado e buscando compreender
+          como a programação funcionava. <br />
+          Após em torno de 6 meses estudando comecei a criar coragem de produzir
+          algumas ideias, simples mas sempre com objetivo de criar um código
+          bacana. <br />
           Com toda a bagagem que obtive durante os anos trabalhando como
           professor, adquiri algumas habilidades que considero essencial,
           facilidade para compreender a dúvida de um colega, facilidade de
@@ -385,9 +385,39 @@
     <section id="contato">
       <div class="ajuste"></div>
       <h3>Contato</h3>
-
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <div class="ajuste"></div>
+      <form action="">
+        <div>
+          <label for="name">Nome Completo</label>
+          <br>
+          <input type="text" id="name" name="name" placeholder="Digite seu nome..." required>
+        </div>
+        <div>
+          <label for="email"> E-mail </label>
+          <br>
+          <input type="email" id="email" name="email" placeholder="usuario@usuario.com" required>
+        </div>
+        <div>
+          <label for="indicacao">Como me encontrou?</label>
+          <br>
+          <select name="indicacao" id="indicacao" required>
+            <option value="facebook">Facebook</option>
+            <option value="linkedin">Linkedin</option>
+            <option value="indicacao">Alguém indicou</option>
+            <option value="github">Github</option>
+            <option value="aleatorio">Aleatoriamente</option>
+          </select>
+        </div>
+        <div>
+          <label for="texto">Me envie uma mensagem</label>
+          <br>
+          <textarea name="texto" id="texto" cols="100%" rows="10" placeholder="Sua mensagem aqui..."
+            required></textarea>
+        </div>
+        <div>
+          <button type="submit"> Enviar</button>
+        </div>
+      </form>
     </section>
   </div>
   <a href="index.html" class="voltar-ao-topo botao-subir">
