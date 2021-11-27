@@ -1,0 +1,252 @@
+@import "menu-nav.css";
+@import "animation-typewriter.css";
+
+/* itens globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  animation: fundoAnimado 8s infinite;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 40px;
+}
+
+p {
+  text-align: justify;
+  text-indent: 1rem;
+}
+
+.ajuste {
+  height: 70px;
+}
+
+/* final itens globais */
+
+@keyframes fundoAnimado {
+  0% {
+    background: rgb(9, 0, 58);
+  }
+  50% {
+    background: rgb(48, 9, 49);
+  }
+  100% {
+    background: rgb(9, 0, 58);
+  }
+}
+
+.container {
+  width: min(900px, 90%);
+  margin: auto;
+  color: white;
+}
+
+#index {
+  margin-bottom: 50px;
+}
+
+.img-profile {
+  width: 250px;
+  margin: auto;
+}
+
+.img-profile img {
+  width: 100%;
+  border-radius: 50px 0 50px 0;
+  border: 5px solid #000fff;
+}
+
+.rede-social .title {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.rede-social .itens {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.rede-social .itens a:hover {
+  color: blueviolet;
+}
+
+.contact-item {
+  text-align: center;
+}
+
+#sobre .button {
+  text-align: center;
+  margin-top: 20px;
+}
+#sobre .button #read-more,
+.button-hidden {
+  padding: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden .button {
+  text-align: center;
+}
+
+#rotate {
+  animation: rotate 3s infinite;
+  z-index: -10001;
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+
+}
+
+[class^="number-slide"],
+[class*=" number-slide"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  z-index: -1;
+}
+
+#portifolio {
+  text-align: center;
+}
+
+#portifolio h3 {
+  margin: 30px;
+}
+
+#portifolio img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.div-box {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-box a {
+  color: #000fff;
+}
+
+.box {
+  width: 260px;
+  height: 300px;
+  background: rgb(207, 207, 207);
+  border-radius: 20px;
+  color: black;
+}
+
+.box span {
+  font-weight: 600;
+}
+
+.box img {
+  height: 180px;
+}
+
+.indisponivel {
+  text-decoration: line-through;
+  cursor: help;
+}
+
+footer {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(107, 107, 107);
+  color: white;
+  font-weight: 700;
+}
+
+.botao-subir {
+  position: fixed;
+  bottom: 0.1em;
+  right: 0.1em;
+  text-decoration: none;
+  padding: 0.7em 0.2em;
+}
+
+.botao-subir:hover {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.5s;
+}
+
+
+/* contato */
+
+form {
+  display: grid;
+  gap: 20px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  
+}
+input {
+  width: 100%;
+}
+
+#contato button {
+  padding: 10px 20px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .rede-social .itens {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .div-box {
+    flex-direction: column;
+  }
+
+  [class^="number-slide"],
+  [class*=" number-slide"] {
+    display: inline-flex;
+    width: 100%;
+  }
+}
