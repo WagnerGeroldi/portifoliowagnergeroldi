@@ -207,29 +207,6 @@ footer {
 }
 
 
-/* contato */
-
-form {
-  display: grid;
-  gap: 20px;
-}
-
-input, select, textarea {
-  padding: 10px;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  
-}
-input, textarea {
-  width: 100%;
-}
-
-#contato button {
-  padding: 10px 20px;
-  margin-bottom: 50px;
-}
-
 @media (max-width: 600px) {
   h3 {
     font-size: 1.2rem;
