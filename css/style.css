@@ -69,6 +69,11 @@ p {
   border: 5px solid #000fff;
 }
 
+.level {
+  text-align: center;
+  margin: 20px 0;
+}
+
 .rede-social .title {
   text-align: center;
   margin-top: 25px;
