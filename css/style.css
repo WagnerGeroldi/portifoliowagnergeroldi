@@ -93,7 +93,6 @@ p {
   text-align: center;
 }
 
-
 #sobre .button {
   text-align: center;
   margin-top: 20px;
@@ -121,7 +120,6 @@ p {
   z-index: -10001;
 }
 
-
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -129,7 +127,6 @@ p {
   100% {
     transform: rotate(360deg);
   }
-
 }
 
 [class^="number-slide"],
@@ -170,7 +167,7 @@ p {
 
 .box {
   width: 260px;
-  height: 300px;
+  height: 340px;
   background: rgb(207, 207, 207);
   border-radius: 20px;
   color: black;
@@ -212,6 +209,14 @@ footer {
   transition: 0.5s;
 }
 
+.target-projects {
+  margin-bottom: 30px;
+  margin-top: 50px;
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
 
 @media (max-width: 600px) {
   h3 {
