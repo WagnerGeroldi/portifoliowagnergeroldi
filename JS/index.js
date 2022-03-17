@@ -1,3 +1,13 @@
+function openModal() {
+    modal.classList.remove("escondido");
+}
+
+
+function closeModal() {
+  modal.classList.add("escondido");
+}
+
+
 //lidando com o botao leia mais...
 
 const btnReadMore = document.querySelector("#read-more");
@@ -18,5 +28,7 @@ function hiddenTextAbout() {
 btnHiddenText.addEventListener("click", hiddenTextAbout);
 
 //fim botao leia mais
+
+
 
 
